@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="1/30/2020 2:27:00 PM"
@@ -11,9 +11,1378 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionGUID="{58039490-E42B-429B-AC8E-AFAFC9342884}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{6C1E992A-7273-4C92-B9C2-A7E4F458629F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BA289E1D-E338-44A7-986F-4FEBE140D6A0}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\temp\Qmos_area.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ARE_AREA_CODE"
+              DTS:DTSID="{8FEB69CF-F4C4-4AB5-A0FB-5881FA2FB338}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="10"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ARG_ID"
+              DTS:DTSID="{89531DC3-3400-4128-824B-047B2A597DD8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RSB_RESPONSIBILITY_ID"
+              DTS:DTSID="{73F57235-4563-46A2-81E6-672336CBC45F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ARE_AREA_DESC"
+              DTS:DTSID="{158ABFA3-1DF9-4806-AABE-227A77A85086}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ARE_SEQUENCE"
+              DTS:DTSID="{48800309-301A-4639-AE63-DD25F7403C6A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ARE_STRAND_NO"
+              DTS:DTSID="{20711EF3-1B01-40C9-9F4A-8BF9BCF5B5E6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ARE_COBBLE"
+              DTS:DTSID="{DEDDA5F6-BE18-43EF-B572-F158F0E968F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ARE_LABEL"
+              DTS:DTSID="{AE812488-7C28-46BE-843E-B9A2FB0C0051}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ARE_BITMAP"
+              DTS:DTSID="{6B4A1BFF-4FFC-43A8-B44B-318975EE51F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ARE_DISPLAY_SEQ"
+              DTS:DTSID="{DB36341D-2BFA-4A8A-89B7-B595293EEA8F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UC"
+              DTS:DTSID="{767BB5AA-63A1-45C1-85AD-33C66A759C26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DC"
+              DTS:DTSID="{ECB5DF23-05B0-48FF-9B85-424338551A08}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="15"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UM"
+              DTS:DTSID="{40DC0522-7325-488F-9E8F-CA87A2EF5DB4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DM"
+              DTS:DTSID="{BCD81EEE-AEB8-4DC1-926E-846B3398B261}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C72DC8AB-A4DB-467E-8BD7-975D0A2E8D92}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\temp\Qmos_stations.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="STA_STATION_ID"
+              DTS:DTSID="{6F0FCD2C-28A5-424A-A856-07068AC59FCF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="STT_TYPE_ID"
+              DTS:DTSID="{8F4F6E0F-7499-4D21-885E-E11369DFFDB8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WCR_WORK_CENTER_ID"
+              DTS:DTSID="{721E8CC9-B8BF-43AA-9BD6-8236BF7D287D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="STA_STATION_DESC"
+              DTS:DTSID="{A936EB20-EC27-40C7-B68C-DAD1F11E152A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="STA_PRIMARY"
+              DTS:DTSID="{536ABB78-005E-4314-A312-057B7390FBAC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="STA_BDT_DATA_SOURCE"
+              DTS:DTSID="{C353F220-A8A3-4659-A7D3-6EB39208F2EE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="STA_BDT_DEFAULT"
+              DTS:DTSID="{4BAC5091-A86A-4DB5-A7BB-7FAFEB2CF613}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SAP_FINISHING_AVAIL"
+              DTS:DTSID="{8A5AB01F-74DE-443D-90F2-66E9E141910B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="STA_FIN_WC_DEFAULT"
+              DTS:DTSID="{F23270ED-F235-4BB7-BCCA-764D0639C573}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Oracle Connector 1]"
+      DTS:CreationName="MSORA"
+      DTS:DTSID="{8C7A310E-A1CA-4304-B002-82AA07D8F8BA}"
+      DTS:ObjectName="Oracle Connector 1">
+      <DTS:ObjectData>
+        <OracleXMLPackage>
+          <OraConnectionString>SERVER=//ORADBBEAPC01-cluster.opti.local:1526/MESBEAP1;USERNAME=scvorcalesap;ORACLEHOME=;ORACLEHOME64=;WINAUTH=0</OraConnectionString>
+          <OraRetain>False</OraRetain>
+          <OraInitialCatalog></OraInitialCatalog>
+          <OraServerName>//ORADBBEAPC01-cluster.opti.local:1526/MESBEAP1</OraServerName>
+          <OraUserName>scvorcalesap</OraUserName>
+          <OraOracleHome></OraOracleHome>
+          <OraOracleHome64></OraOracleHome64>
+          <OraWinAuthentication>False</OraWinAuthentication>
+          <OraEnableDetailedTracing>False</OraEnableDetailedTracing>
+          <OraPassword
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAml5xOK5JuEa6kEk/Olj6qwAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACIqQmhwp9rqhikTgNU6yu2AAAAAASAAACgAAAAEAAAABy90qf1lcgUbpB5WxyG4WkQAAAAGSUZ3euYpWE7n/Fa2sU7tRQAAACVZMdAMpQ5YbMhg287rVuC3sTuhw</OraPassword>
+        </OracleXMLPackage>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
   <DTS:Variables />
-  <DTS:Executables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{CB6C832E-9A3B-4AD3-8206-A653D14B37C1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ARE_AREA_CODE]"
+                      cachedDataType="i4"
+                      cachedName="ARE_AREA_CODE"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_AREA_CODE]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_AREA_CODE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ARG_ID]"
+                      cachedDataType="numeric"
+                      cachedName="ARG_ID"
+                      cachedPrecision="10"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARG_ID]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARG_ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[RSB_RESPONSIBILITY_ID]"
+                      cachedDataType="i1"
+                      cachedName="RSB_RESPONSIBILITY_ID"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[RSB_RESPONSIBILITY_ID]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[RSB_RESPONSIBILITY_ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ARE_AREA_DESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="ARE_AREA_DESC"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_AREA_DESC]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_AREA_DESC]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ARE_SEQUENCE]"
+                      cachedDataType="i4"
+                      cachedName="ARE_SEQUENCE"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_SEQUENCE]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_SEQUENCE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ARE_STRAND_NO]"
+                      cachedDataType="i1"
+                      cachedName="ARE_STRAND_NO"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_STRAND_NO]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_STRAND_NO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ARE_COBBLE]"
+                      cachedDataType="i1"
+                      cachedName="ARE_COBBLE"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_COBBLE]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_COBBLE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ARE_LABEL]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="ARE_LABEL"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_LABEL]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_LABEL]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ARE_BITMAP]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="30"
+                      cachedName="ARE_BITMAP"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_BITMAP]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_BITMAP]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ARE_DISPLAY_SEQ]"
+                      cachedDataType="i2"
+                      cachedName="ARE_DISPLAY_SEQ"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_DISPLAY_SEQ]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_DISPLAY_SEQ]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[UC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="UC"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UC]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[UC]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[DC]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DC"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DC]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[DC]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[UM]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="UM"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UM]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[UM]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[DM]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="DM"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DM]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[DM]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_AREA_CODE]"
+                      dataType="i4"
+                      name="ARE_AREA_CODE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARG_ID]"
+                      dataType="numeric"
+                      name="ARG_ID"
+                      precision="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[RSB_RESPONSIBILITY_ID]"
+                      dataType="i1"
+                      name="RSB_RESPONSIBILITY_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_AREA_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="ARE_AREA_DESC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_SEQUENCE]"
+                      dataType="i4"
+                      name="ARE_SEQUENCE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_STRAND_NO]"
+                      dataType="i1"
+                      name="ARE_STRAND_NO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_COBBLE]"
+                      dataType="i1"
+                      name="ARE_COBBLE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_LABEL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="ARE_LABEL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_BITMAP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="ARE_BITMAP" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ARE_DISPLAY_SEQ]"
+                      dataType="i2"
+                      name="ARE_DISPLAY_SEQ" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="UC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DC]"
+                      dataType="dbTimeStamp"
+                      name="DC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="UM" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DM]"
+                      dataType="dbTimeStamp"
+                      name="DM" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Oracle Source"
+              componentClassID="Attunity.SSISOraSrc"
+              contactInfo="Oracle Source;Microsoft Connector for Oracle by Attunity; Attunity Ltd.; All Rights Reserved; http://www.attunity.com;7"
+              description="Microsoft Oracle Source Component by Attunity"
+              name="Oracle Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">qmos.area</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"></property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of rows fetched in a batch."
+                  expressionType="Notify"
+                  name="BatchSize">100</property>
+                <property
+                  dataType="System.Int32"
+                  description="Number of pre-fetched rows."
+                  expressionType="Notify"
+                  name="PrefetchCount">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Oracle Source.Connections[MSOraConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Oracle Connector 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Oracle Connector 1]"
+                  description="The Oracle runtime connection"
+                  name="MSOraConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="Oracle Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_AREA_CODE]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_AREA_CODE]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_AREA_CODE]"
+                      name="ARE_AREA_CODE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARG_ID]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARG_ID]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARG_ID]"
+                      name="ARG_ID"
+                      precision="10" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[RSB_RESPONSIBILITY_ID]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[RSB_RESPONSIBILITY_ID]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[RSB_RESPONSIBILITY_ID]"
+                      name="RSB_RESPONSIBILITY_ID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_AREA_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_AREA_DESC]"
+                      length="30"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_AREA_DESC]"
+                      name="ARE_AREA_DESC" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_SEQUENCE]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_SEQUENCE]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_SEQUENCE]"
+                      name="ARE_SEQUENCE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_STRAND_NO]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_STRAND_NO]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_STRAND_NO]"
+                      name="ARE_STRAND_NO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_COBBLE]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_COBBLE]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_COBBLE]"
+                      name="ARE_COBBLE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_LABEL]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_LABEL]"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_LABEL]"
+                      name="ARE_LABEL" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_BITMAP]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_BITMAP]"
+                      length="30"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_BITMAP]"
+                      name="ARE_BITMAP" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_DISPLAY_SEQ]"
+                      dataType="i2"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_DISPLAY_SEQ]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[ARE_DISPLAY_SEQ]"
+                      name="ARE_DISPLAY_SEQ" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[UC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[UC]"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[UC]"
+                      name="UC" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[DC]"
+                      dataType="dbTimeStamp"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[DC]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[DC]"
+                      name="DC" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[UM]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[UM]"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[UM]"
+                      name="UM" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[DM]"
+                      dataType="dbTimeStamp"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[DM]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].Columns[DM]"
+                      name="DM" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_AREA_CODE]"
+                      dataType="i4"
+                      name="ARE_AREA_CODE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARG_ID]"
+                      dataType="numeric"
+                      name="ARG_ID"
+                      precision="10" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[RSB_RESPONSIBILITY_ID]"
+                      dataType="i1"
+                      name="RSB_RESPONSIBILITY_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_AREA_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="ARE_AREA_DESC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_SEQUENCE]"
+                      dataType="i4"
+                      name="ARE_SEQUENCE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_STRAND_NO]"
+                      dataType="i1"
+                      name="ARE_STRAND_NO" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_COBBLE]"
+                      dataType="i1"
+                      name="ARE_COBBLE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_LABEL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="ARE_LABEL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_BITMAP]"
+                      codePage="1252"
+                      dataType="str"
+                      length="30"
+                      name="ARE_BITMAP" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_DISPLAY_SEQ]"
+                      dataType="i2"
+                      name="ARE_DISPLAY_SEQ" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[UC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="UC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[DC]"
+                      dataType="dbTimeStamp"
+                      name="DC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[UM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="UM" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[DM]"
+                      dataType="dbTimeStamp"
+                      name="DM" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output]"
+                  isErrorOut="true"
+                  name="Oracle Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_AREA_CODE]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_AREA_CODE]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_AREA_CODE]"
+                      name="ARE_AREA_CODE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARG_ID]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARG_ID]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARG_ID]"
+                      name="ARG_ID"
+                      precision="10" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[RSB_RESPONSIBILITY_ID]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[RSB_RESPONSIBILITY_ID]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[RSB_RESPONSIBILITY_ID]"
+                      name="RSB_RESPONSIBILITY_ID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_AREA_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_AREA_DESC]"
+                      length="30"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_AREA_DESC]"
+                      name="ARE_AREA_DESC" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_SEQUENCE]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_SEQUENCE]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_SEQUENCE]"
+                      name="ARE_SEQUENCE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_STRAND_NO]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_STRAND_NO]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_STRAND_NO]"
+                      name="ARE_STRAND_NO" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_COBBLE]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_COBBLE]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_COBBLE]"
+                      name="ARE_COBBLE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_LABEL]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_LABEL]"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_LABEL]"
+                      name="ARE_LABEL" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_BITMAP]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_BITMAP]"
+                      length="30"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_BITMAP]"
+                      name="ARE_BITMAP" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_DISPLAY_SEQ]"
+                      dataType="i2"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[ARE_DISPLAY_SEQ]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ARE_DISPLAY_SEQ]"
+                      name="ARE_DISPLAY_SEQ" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[UC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[UC]"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[UC]"
+                      name="UC" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[DC]"
+                      dataType="dbTimeStamp"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[DC]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[DC]"
+                      name="DC" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[UM]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[UM]"
+                      length="15"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[UM]"
+                      name="UM" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[DM]"
+                      dataType="dbTimeStamp"
+                      externalMetadataColumnId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[DM]"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[DM]"
+                      name="DM" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Oracle Source Output]"
+              endId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Oracle Source Output"
+              startId="Package\Data Flow Task\Oracle Source.Outputs[Oracle Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{dfce0a91-02ba-46f7-94e9-1314048768fc}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 1\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[STA_STATION_ID]"
+                      cachedDataType="i1"
+                      cachedName="STA_STATION_ID"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_STATION_ID]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_STATION_ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[STT_TYPE_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="STT_TYPE_ID"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STT_TYPE_ID]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STT_TYPE_ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[WCR_WORK_CENTER_ID]"
+                      cachedDataType="i2"
+                      cachedName="WCR_WORK_CENTER_ID"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[WCR_WORK_CENTER_ID]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[WCR_WORK_CENTER_ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[STA_STATION_DESC]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="STA_STATION_DESC"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_STATION_DESC]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_STATION_DESC]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[STA_PRIMARY]"
+                      cachedDataType="i1"
+                      cachedName="STA_PRIMARY"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_PRIMARY]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_PRIMARY]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[STA_BDT_DATA_SOURCE]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="STA_BDT_DATA_SOURCE"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_BDT_DATA_SOURCE]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_BDT_DATA_SOURCE]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[STA_BDT_DEFAULT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="STA_BDT_DEFAULT"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_BDT_DEFAULT]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_BDT_DEFAULT]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[SAP_FINISHING_AVAIL]"
+                      cachedDataType="i1"
+                      cachedName="SAP_FINISHING_AVAIL"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SAP_FINISHING_AVAIL]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[SAP_FINISHING_AVAIL]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[STA_FIN_WC_DEFAULT]"
+                      cachedDataType="i2"
+                      cachedName="STA_FIN_WC_DEFAULT"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_FIN_WC_DEFAULT]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_FIN_WC_DEFAULT]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_STATION_ID]"
+                      dataType="i1"
+                      name="STA_STATION_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STT_TYPE_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="STT_TYPE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[WCR_WORK_CENTER_ID]"
+                      dataType="i2"
+                      name="WCR_WORK_CENTER_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_STATION_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="STA_STATION_DESC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_PRIMARY]"
+                      dataType="i1"
+                      name="STA_PRIMARY" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_BDT_DATA_SOURCE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="STA_BDT_DATA_SOURCE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_BDT_DEFAULT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="STA_BDT_DEFAULT" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[SAP_FINISHING_AVAIL]"
+                      dataType="i1"
+                      name="SAP_FINISHING_AVAIL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[STA_FIN_WC_DEFAULT]"
+                      dataType="i2"
+                      name="STA_FIN_WC_DEFAULT" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Oracle Source"
+              componentClassID="Attunity.SSISOraSrc"
+              contactInfo="Oracle Source;Microsoft Connector for Oracle by Attunity; Attunity Ltd.; All Rights Reserved; http://www.attunity.com;7"
+              description="Microsoft Oracle Source Component by Attunity"
+              name="Oracle Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">qmos.station</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"></property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of rows fetched in a batch."
+                  expressionType="Notify"
+                  name="BatchSize">100</property>
+                <property
+                  dataType="System.Int32"
+                  description="Number of pre-fetched rows."
+                  expressionType="Notify"
+                  name="PrefetchCount">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Oracle Source.Connections[MSOraConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Oracle Connector 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Oracle Connector 1]"
+                  description="The Oracle runtime connection"
+                  name="MSOraConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="Oracle Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_STATION_ID]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_STATION_ID]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_STATION_ID]"
+                      name="STA_STATION_ID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STT_TYPE_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STT_TYPE_ID]"
+                      length="10"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STT_TYPE_ID]"
+                      name="STT_TYPE_ID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[WCR_WORK_CENTER_ID]"
+                      dataType="i2"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[WCR_WORK_CENTER_ID]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[WCR_WORK_CENTER_ID]"
+                      name="WCR_WORK_CENTER_ID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_STATION_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_STATION_DESC]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_STATION_DESC]"
+                      name="STA_STATION_DESC" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_PRIMARY]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_PRIMARY]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_PRIMARY]"
+                      name="STA_PRIMARY" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_BDT_DATA_SOURCE]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_BDT_DATA_SOURCE]"
+                      length="10"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_BDT_DATA_SOURCE]"
+                      name="STA_BDT_DATA_SOURCE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_BDT_DEFAULT]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_BDT_DEFAULT]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_BDT_DEFAULT]"
+                      name="STA_BDT_DEFAULT" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[SAP_FINISHING_AVAIL]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[SAP_FINISHING_AVAIL]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[SAP_FINISHING_AVAIL]"
+                      name="SAP_FINISHING_AVAIL" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_FIN_WC_DEFAULT]"
+                      dataType="i2"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_FIN_WC_DEFAULT]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].Columns[STA_FIN_WC_DEFAULT]"
+                      name="STA_FIN_WC_DEFAULT" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_STATION_ID]"
+                      dataType="i1"
+                      name="STA_STATION_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STT_TYPE_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="STT_TYPE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[WCR_WORK_CENTER_ID]"
+                      dataType="i2"
+                      name="WCR_WORK_CENTER_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_STATION_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="STA_STATION_DESC" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_PRIMARY]"
+                      dataType="i1"
+                      name="STA_PRIMARY" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_BDT_DATA_SOURCE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="STA_BDT_DATA_SOURCE" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_BDT_DEFAULT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="STA_BDT_DEFAULT" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[SAP_FINISHING_AVAIL]"
+                      dataType="i1"
+                      name="SAP_FINISHING_AVAIL" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_FIN_WC_DEFAULT]"
+                      dataType="i2"
+                      name="STA_FIN_WC_DEFAULT" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output]"
+                  isErrorOut="true"
+                  name="Oracle Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_STATION_ID]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_STATION_ID]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_STATION_ID]"
+                      name="STA_STATION_ID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STT_TYPE_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STT_TYPE_ID]"
+                      length="10"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STT_TYPE_ID]"
+                      name="STT_TYPE_ID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[WCR_WORK_CENTER_ID]"
+                      dataType="i2"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[WCR_WORK_CENTER_ID]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[WCR_WORK_CENTER_ID]"
+                      name="WCR_WORK_CENTER_ID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_STATION_DESC]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_STATION_DESC]"
+                      length="50"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_STATION_DESC]"
+                      name="STA_STATION_DESC" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_PRIMARY]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_PRIMARY]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_PRIMARY]"
+                      name="STA_PRIMARY" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_BDT_DATA_SOURCE]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_BDT_DATA_SOURCE]"
+                      length="10"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_BDT_DATA_SOURCE]"
+                      name="STA_BDT_DATA_SOURCE" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_BDT_DEFAULT]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_BDT_DEFAULT]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_BDT_DEFAULT]"
+                      name="STA_BDT_DEFAULT" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[SAP_FINISHING_AVAIL]"
+                      dataType="i1"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[SAP_FINISHING_AVAIL]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[SAP_FINISHING_AVAIL]"
+                      name="SAP_FINISHING_AVAIL" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_FIN_WC_DEFAULT]"
+                      dataType="i2"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output].ExternalColumns[STA_FIN_WC_DEFAULT]"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[STA_FIN_WC_DEFAULT]"
+                      name="STA_FIN_WC_DEFAULT" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 1.Paths[Oracle Source Output]"
+              endId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Oracle Source Output"
+              startId="Package\Data Flow Task 1\Oracle Source.Outputs[Oracle Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="324.5,135.5" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task 1"
+          TopLeft="324.5,237.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Data Flow Task\Flat File Destination"
+          TopLeft="427,296" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Data Flow Task\Oracle Source"
+          TopLeft="425,162" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Oracle Source Output]"
+          TopLeft="513.75,204">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,92"
+              Start="0,0"
+              End="0,84.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,84.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Oracle Source">
+    <Properties>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Data Flow Task 1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Data Flow Task 1\Flat File Destination"
+          TopLeft="427,296" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Data Flow Task 1\Oracle Source"
+          TopLeft="425,162" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Oracle Source Output]"
+          TopLeft="513.75,204">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,92"
+              Start="0,0"
+              End="0,84.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,84.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task 1\Oracle Source">
+    <Properties>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
